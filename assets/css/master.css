@@ -22,14 +22,14 @@
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  height: 250px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
 
 .card-cover:hover img{
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 .card-cover:hover .hover-card {
@@ -44,4 +44,25 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+/* info canzone */
+
+#title{
+  font-size: 20px;
+  color: #0d00a3;
+}
+
+#autore{
+  font-size: 18px;
+}
+
+#genere{
+  margin-top: 5px;
+  font-size: 17px;
+  color: #00b6ff;
+}
+
+#year{
+  font-size: 16px;
 }

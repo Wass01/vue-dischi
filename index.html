@@ -9,20 +9,24 @@
 </head>
 <body>
   <div id="root">
-    
+
     <div class="container-card">
       <div class="card" v-for="disco in dischi">
         <div class="card-cover">
           <img :src="`${disco.poster}`" alt="cover">
           <div class="hover-card">
-            <p>{{ disco.title }}</p>
-            <p>{{ disco.author }}</p>
-            <p>{{ disco.genre }}</p>
-            <p>{{ disco.year }}</p>
+            <p id="title">
+              <strong>{{ disco.title }}</strong>
+            </p>
+            <p id="autore">
+              <strong>{{ disco.author }}</strong>
+            </p>
+            <p id="genere">{{ disco.genre }}</p>
+            <p id="year">{{ disco.year }}</p>
           </div>
         </div>
       </div>
-<!-- ` ` -->
+
     </div>
   </div>
 
