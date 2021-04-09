@@ -10,10 +10,24 @@
 <body>
   <div id="root">
 
+    <div class="container-header">
+      <h3>Filtra per genere</h5>
+      <select v-model="select">
+        <option value="">ALL</option>
+        <option>Metal</option>
+        <option>Pop</option>
+        <option>Rock</option>
+        <option>Jazz</option>
+      </select>
+    </div>
+
+
     <div class="container-card">
-      <div class="card" v-for="disco in dischi">
+      <div class="card" v-for="disco in dischi"
+        v-if="(disco.genre == select || select == '')"
+       >
         <div class="card-cover">
-          <img :src="`${disco.poster}`" alt="cover">
+          <img :src="disco.poster" alt="cover">
           <div class="hover-card">
             <p id="title">
               <strong>{{ disco.title }}</strong>
@@ -26,7 +40,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 

@@ -9,6 +9,7 @@ let app = new Vue({
   el: "#root",
   data: {
     dischi: [],
+    select: '',
   },
 
   mounted(){
@@ -16,5 +17,8 @@ let app = new Vue({
       .then((response) => {
         this.dischi = response.data.response;
     });
-  }
+  },
+
+  methods: {
+  },
 });

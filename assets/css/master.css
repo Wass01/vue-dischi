@@ -11,6 +11,15 @@
   flex-wrap: wrap;
 }
 
+.container-header{
+  background-color: #19ff00;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .card{
   width: 20%;
   margin-top: 30px;
