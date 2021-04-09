@@ -8,8 +8,13 @@ Vue.config.devtools = true;
 let app = new Vue({
   el: "#root",
   data: {
+    dischi: [],
   },
 
-  methods: {
+  mounted(){
+    axios.get('https://flynn.boolean.careers/exercises/api/array/music')
+      .then((response) => {
+        this.dischi = response.data.response;
+    });
   }
 });
